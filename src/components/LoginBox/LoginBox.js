@@ -1,9 +1,45 @@
 import React from 'react';
+import Paper from 'material-ui/Paper';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
+
+import './styles.css';
+
+import {grey500, blue500} from 'material-ui/styles/colors';
+
+const floatingTextStyles = {
+  floatingLabelStyle: {
+    color: grey500,
+  },
+  floatingLabelFocusStyle: {
+    color: blue500,
+  },
+};
+
+
 
 const LoginBox = () => {
     return (
-        <div>
-            This is the LoginBox
+        <div className="login-box-container">
+            <Paper className="login-paper" zDepth={4}>
+                <div className="login-field">
+                <TextField
+                    floatingLabelText="Username"
+                    floatingLabelStyle={floatingTextStyles.floatingLabelStyle}
+                    floatingLabelFocusStyle={floatingTextStyles.floatingLabelFocusStyle}
+                />
+                </div>
+                <div className="login-field">
+                <TextField
+                    floatingLabelText="Password"
+                    floatingLabelStyle={floatingTextStyles.floatingLabelStyle}
+                    floatingLabelFocusStyle={floatingTextStyles.floatingLabelFocusStyle}
+                />
+                </div>
+                <div className="login-button-container">
+                    <RaisedButton label="Login" className="login-button"/>
+                </div>
+            </Paper>
         </div>
     );
 }

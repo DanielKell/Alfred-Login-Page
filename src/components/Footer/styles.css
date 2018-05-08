@@ -1,5 +1,7 @@
 .footer {
     display:flex;
     justify-content: center;
-    margin-bottom: 20px;
+    background-color: lightgrey;
+    bottom:0px;
+    width: 100vw;
 }

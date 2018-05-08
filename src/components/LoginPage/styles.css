@@ -1,0 +1,28 @@
+.login-container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(121, 228, 247);
+    width: 100vw;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/* .login-page-title {
+    margin-bottom: 50px;
+} */
+
+.login-page-title h2 {
+    font-family: 'Londrina Shadow';
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+.login-container h3 {
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
