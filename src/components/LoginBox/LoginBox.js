@@ -7,7 +7,7 @@ import './styles.css';
 
 import {grey500, blue500} from 'material-ui/styles/colors';
 
-const floatingTextStyles = {
+const Styles = {
   floatingLabelStyle: {
     color: grey500,
   },
@@ -23,18 +23,18 @@ const LoginBox = () => {
         <div className="login-box-container">
             <Paper className="login-paper" zDepth={4}>
                 <div className="login-field">
-                <TextField
-                    floatingLabelText="Username"
-                    floatingLabelStyle={floatingTextStyles.floatingLabelStyle}
-                    floatingLabelFocusStyle={floatingTextStyles.floatingLabelFocusStyle}
-                />
+                    <TextField
+                        floatingLabelText="Username"
+                        floatingLabelStyle={Styles.floatingLabelStyle}
+                        floatingLabelFocusStyle={Styles.floatingLabelFocusStyle}
+                    />
                 </div>
                 <div className="login-field">
-                <TextField
-                    floatingLabelText="Password"
-                    floatingLabelStyle={floatingTextStyles.floatingLabelStyle}
-                    floatingLabelFocusStyle={floatingTextStyles.floatingLabelFocusStyle}
-                />
+                    <TextField
+                        floatingLabelText="Password"
+                        floatingLabelStyle={Styles.floatingLabelStyle}
+                        floatingLabelFocusStyle={Styles.floatingLabelFocusStyle}
+                    />
                 </div>
                 <div className="login-button-container">
                     <RaisedButton label="Login" className="login-button"/>

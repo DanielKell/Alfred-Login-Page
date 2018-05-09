@@ -8,9 +8,9 @@
     padding-top: 30px;
 }
 
-/* .login-page-title {
-    margin-bottom: 50px;
-} */
+.login-page-title {
+    display: flex;
+}
 
 .login-page-title h2 {
     font-family: 'Londrina Shadow';

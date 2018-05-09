@@ -9,6 +9,7 @@
 .login-field {
     display:flex;
     justify-content: center;
+    margin: 0 20px 0 20px;
 }
 
 .login-button-container {
