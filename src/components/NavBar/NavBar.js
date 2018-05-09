@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
-import AppBar from 'material-ui/AppBar';
+
+import NavBarItems from '../NavBarItems/NavBarItems';
+import logo from '../../images/servant-outline.svg';
+import './styles.css';
 
 class NavBar extends Component {
     render() {
       return (
-          <AppBar />
+        <div className="nav-bar-container">
+          <div className="nav-logo-container">
+            <img src={logo} alt="Alfred Logo" />
+          </div>
+          <div className="nav-tabs-container">
+            <NavBarItems />
+          </div>
+        </div>
       );
     }
   }

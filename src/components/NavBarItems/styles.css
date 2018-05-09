@@ -1,0 +1,12 @@
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    font-family: 'Londrina Solid';
+    font-size: 26px;
+}

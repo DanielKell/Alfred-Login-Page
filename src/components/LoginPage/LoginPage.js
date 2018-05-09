@@ -7,13 +7,11 @@ import logo from '../../images/servant-outline.svg';
 const LoginPage = () => {
     return (
         <div className="login-container">
-            
             <div className="login-page-title">
-            <img src={logo} alt="fail" />
+                <img src={logo} alt="Alfred logo" />
                 <h2>Alfred</h2>
             </div>
-            <h3>Here to make your life a little easier</h3>
-
+            <h3 className="login-page-tagline">Here to make your life a little easier</h3>
             <LoginBox />
         </div>
     );
