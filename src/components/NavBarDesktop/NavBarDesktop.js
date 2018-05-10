@@ -4,7 +4,7 @@ import NavBarItems from '../NavBarItems/NavBarItems';
 import logo from '../../images/servant-outline.svg';
 import './styles.css';
 
-class NavBar extends Component {
+class NavBarDesktop extends Component {
     render() {
       return (
         <div className="nav-bar-container">
@@ -14,9 +14,12 @@ class NavBar extends Component {
           <div className="nav-tabs-container">
             <NavBarItems />
           </div>
+          <div className="nav-login">
+            <p>Log Out</p>
+          </div>
         </div>
       );
     }
   }
   
-  export default NavBar;
+  export default NavBarDesktop;
