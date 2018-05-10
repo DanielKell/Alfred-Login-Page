@@ -3,34 +3,25 @@
   height: 75px;
   background-color: lightcyan;
   display: flex;
-  justify-content: space-between;
-}
-
-.nav-mobile-hamburger-menu {
-  height: 75px;
-  width: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-mobile-logo {
-  height: 75px;
-  width: 75px;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-mobile-login-logout {
-  height: 75px;
-  width: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-mobile-drawer-font {
-    font-family: 'Raleway';
-    font-size: 26px;
-    margin: 20px 10px 30px 10px;
-}
+  justify-content: space-between; }
+  .nav-mobile-container .nav-mobile-hamburger-menu {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nav-mobile-container .nav-mobile-hamburger-menu .nav-mobile-drawer-font {
+      font-family: "Raleway";
+      font-size: 26px;
+      margin: 20px 10px 30px 10px; }
+  .nav-mobile-container .nav-mobile-logo {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center; }
+  .nav-mobile-container .nav-mobile-login-logout {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

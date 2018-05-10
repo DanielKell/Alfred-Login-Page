@@ -8,9 +8,9 @@ import "./styles.css";
 
 //For Styling Hamburger Nav SVG
 const iconStyles = {
-    height: 35,
-    width: 35
-  };
+  height: 35,
+  width: 35
+};
 
 class NavBarMobile extends Component {
   constructor(props) {
@@ -25,12 +25,8 @@ class NavBarMobile extends Component {
   render() {
     return (
       <div className="nav-mobile-container">
-        <div
-          className="nav-mobile-hamburger-menu"
-          label="Open Drawer"
-          onClick={this.handleToggle}
-        >
-          <Menu style={iconStyles}/>
+        <div className="nav-mobile-hamburger-menu" onClick={this.handleToggle}>
+          <Menu style={iconStyles} />
           <Drawer
             docked={false}
             width={200}
@@ -41,13 +37,13 @@ class NavBarMobile extends Component {
               <h3 className="nav-mobile-drawer-font">Home</h3>
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
-                <h3 className="nav-mobile-drawer-font">About Us</h3>
+              <h3 className="nav-mobile-drawer-font">About Us</h3>
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
-                <h3 className="nav-mobile-drawer-font">Pricing</h3>
+              <h3 className="nav-mobile-drawer-font">Pricing</h3>
             </MenuItem>
             <MenuItem onClick={this.handleClose}>
-                <h3 className="nav-mobile-drawer-font">Contact</h3>
+              <h3 className="nav-mobile-drawer-font">Contact</h3>
             </MenuItem>
           </Drawer>
         </div>

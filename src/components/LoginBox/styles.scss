@@ -1,0 +1,20 @@
+.login-paper {
+  height: 300px;
+  width: 65vw;
+  min-width: 256px;
+  max-width: 600px;
+  display: "inline-block";
+  .login-field {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+  }
+  .login-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .login-button {
+      width: 150px;
+    }
+  }
+}

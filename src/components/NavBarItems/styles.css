@@ -1,13 +1,10 @@
 .nav-list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0px;
-    justify-content: space-around;
-}
-
-.nav-list li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: space-around; }
+  .nav-list li {
     font-family: 'Raleway';
     font-size: 22px;
-    font-weight: 600;
-}
+    font-weight: 600; }

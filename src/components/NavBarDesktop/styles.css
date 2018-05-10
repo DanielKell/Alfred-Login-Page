@@ -1,23 +1,16 @@
 .nav-bar-container {
-    display: flex;
-    background-color: rgb(8, 198, 239);
-    justify-content: space-between;
-    height: 75px;
-}
-
-.nav-logo-container {
-    width: 20%;
-}
-
-.nav-tabs-container {
-    width: 60%;
-}
-
-.nav-login {
+  display: flex;
+  background-color: #08c6ef;
+  justify-content: space-between;
+  height: 75px; }
+  .nav-bar-container .nav-logo-container {
+    width: 20%; }
+  .nav-bar-container .nav-tabs-container {
+    width: 60%; }
+  .nav-bar-container .nav-login {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Londrina Solid';
-    font-size: 20px;
-}
+    font-family: "Londrina Solid";
+    font-size: 20px; }

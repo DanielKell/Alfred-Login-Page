@@ -1,20 +1,11 @@
-/* .appHeaderDesktop {
-  display: none;
-} */
-
-.appHeaderMobile {
-  
-}
-
 .appContentWrapper {
-    display: flex;
-    min-height: 100%;
-    flex-direction:column;
-}
-
-.appContent {
   display: flex;
-  margin: 0 auto;
-  width: 100%;
-  flex:1;
-}
+  min-height: 100%;
+  flex-direction: column; }
+  .appContentWrapper .appHeaderDesktop {
+    display: none; }
+  .appContentWrapper .appContent {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1; }

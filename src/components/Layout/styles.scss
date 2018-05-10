@@ -1,0 +1,19 @@
+.appContentWrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+
+  .appHeaderDesktop {
+  display: none;
+} 
+
+  .appHeaderMobile {
+  }
+
+  .appContent {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+  }
+}
