@@ -1,3 +1,5 @@
+@import "../../sass/shared.scss";
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -5,7 +7,7 @@
     padding: 0px;
     justify-content: space-around;
     li {
-        font-family: 'Raleway';
+        font-family: $primary-font;
         font-size: 22px;
         font-weight: 600;
     }

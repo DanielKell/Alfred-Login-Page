@@ -1,16 +1,18 @@
+@import "../../sass/shared.scss";
+
 .login-container {
   height: 85vh;
   display: flex;
   flex-direction: column;
   background-color: rgb(121, 228, 247);
-  width: 100vw;
+  width: 100%;
   align-items: center;
   padding-top: 30px;
 
   .login-page-title {
     display: flex;
     h2 {
-      font-family: "Londrina Shadow";
+      font-family: $brand-logo-font;
       font-size: 50px;
       letter-spacing: 3px;
       margin: 10px;
@@ -19,7 +21,7 @@
   .login-page-tagline {
     font-size: 25px;
     margin-bottom: 50px;
-    font-family: "Raleway";
+    font-family: $primary-font;
     font-weight: 400;
     font-style: italic;
   }

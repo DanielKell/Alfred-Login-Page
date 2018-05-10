@@ -1,19 +1,27 @@
+@import "../../sass/shared.scss";
+
 .appContentWrapper {
   display: flex;
   min-height: 100%;
   flex-direction: column;
 
   .appHeaderDesktop {
-  display: none;
-} 
-
-  .appHeaderMobile {
+    display: none;
   }
 
-  .appContent {
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-    flex: 1;
+  @media screen and (min-width: $breakpoint-mobile) {
+    .appHeaderMobile {
+      display: none;
+    }
+    .appHeaderDesktop {
+      display: block;
+    }
+
+    .appContent {
+      display: flex;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+    }
   }
 }

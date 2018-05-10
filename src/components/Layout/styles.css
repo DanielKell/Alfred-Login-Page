@@ -4,8 +4,13 @@
   flex-direction: column; }
   .appContentWrapper .appHeaderDesktop {
     display: none; }
-  .appContentWrapper .appContent {
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-    flex: 1; }
+  @media screen and (min-width: 600px) {
+    .appContentWrapper .appHeaderMobile {
+      display: none; }
+    .appContentWrapper .appHeaderDesktop {
+      display: block; }
+    .appContentWrapper .appContent {
+      display: flex;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1; } }
