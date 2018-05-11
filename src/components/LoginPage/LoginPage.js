@@ -4,7 +4,10 @@ import LoginBox from "../LoginBox/LoginBox";
 import "./styles.css";
 import logo from "../../images/servant-outline.svg";
 
-const LoginPage = () => {
+import WelcomePage from "../WelcomePage/WelcomePage";
+
+const LoginPage = ({onSignIn, onSignOut, user}) => {
+
   return (
     <div className="login-container">
       <div className="login-page-title">
@@ -14,7 +17,12 @@ const LoginPage = () => {
       <h3 className="login-page-tagline">
         Here to make your life a little easier
       </h3>
-      <LoginBox />
+
+           {user ? (
+            <WelcomePage user={user} onSignOut={onSignOut} />
+          ) : (
+            <LoginBox onSignIn={onSignIn}/>
+          )}
     </div>
   );
 };
