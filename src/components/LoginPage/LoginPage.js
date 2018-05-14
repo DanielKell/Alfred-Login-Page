@@ -6,7 +6,7 @@ import logo from "../../images/servant-outline.svg";
 
 import WelcomePage from "../WelcomePage/WelcomePage";
 
-const LoginPage = ({onSignIn, onSignOut, user}) => {
+const LoginPage = ({onSignIn, onSignOut, user, attemptedLogin}) => {
 
   return (
     <div className="login-container">
@@ -21,7 +21,7 @@ const LoginPage = ({onSignIn, onSignOut, user}) => {
            {user ? (
             <WelcomePage user={user} onSignOut={onSignOut} />
           ) : (
-            <LoginBox onSignIn={onSignIn}/>
+            <LoginBox onSignIn={onSignIn} attemptedLogin={attemptedLogin}/>
           )}
     </div>
   );

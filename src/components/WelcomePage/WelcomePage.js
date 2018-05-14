@@ -4,7 +4,7 @@ const WelcomePage = ({ user, onSignOut }) => {
 
     return (
       <div>
-        Welcome {user.username}!
+        Welcome {user.fullName}!
         <a onClick={onSignOut}>
           Sign out
         </a>

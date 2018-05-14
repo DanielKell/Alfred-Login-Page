@@ -1,0 +1,19 @@
+{
+    "users": [
+        {
+        "username": "dankell",
+        "password": "alfredrocks",
+        "fullName": "Daniel Kell"
+        },
+        {
+        "username": "dankell1",
+        "password": "alfredrocks1",
+        "fullName": "Daniel Kell1"
+        },
+        {
+        "username": "dankell2",
+        "password": "alfredrocks2",
+        "fullName": "Daniel Kell2"
+        }
+    ]
+}

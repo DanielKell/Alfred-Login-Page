@@ -2,19 +2,9 @@ import React, { Component } from "react";
 import Paper from "material-ui/Paper";
 import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
-
-import "./styles.css";
-
 import { grey500, blue500 } from "material-ui/styles/colors";
 
-const Styles = {
-  floatingLabelStyle: {
-    color: grey500
-  },
-  floatingLabelFocusStyle: {
-    color: blue500
-  }
-};
+import "./styles.css";
 
 class LoginBox extends Component {
   handleSignIn = e => {
@@ -25,29 +15,32 @@ class LoginBox extends Component {
   };
 
   render() {
+
     return (
       <div className="login-box-container">
         <Paper className="login-paper" zDepth={4}>
           <div className="login-field">
+          
             <TextField
               floatingLabelText="Username"
-              floatingLabelStyle={Styles.floatingLabelStyle}
-              floatingLabelFocusStyle={Styles.floatingLabelFocusStyle}
+              floatingLabelStyle={{color: grey500}}
+              floatingLabelFocusStyle={{color: blue500}}
+              errorText={this.props.attemptedLogin ? "Incorrect Username" : false}
               ref={"username"}
             />
           </div>
           <div className="login-field">
             <TextField
               floatingLabelText="Password"
-              floatingLabelStyle={Styles.floatingLabelStyle}
-              floatingLabelFocusStyle={Styles.floatingLabelFocusStyle}
+              floatingLabelStyle={{color: grey500}}
+              floatingLabelFocusStyle={{color: blue500}}
+              errorText={this.props.attemptedLogin ? "Incorrect Password" : false}
               ref={"password"}
             />
           </div>
           <RaisedButton
             onClick={this.handleSignIn}
             label="Default"
-            style="login-button"
           />
         </Paper>
       </div>
