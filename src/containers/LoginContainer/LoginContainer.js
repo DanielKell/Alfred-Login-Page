@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import LoginPage from "../../components/LoginPage/LoginPage";
 import { users } from "../../testDB/usersData.json";
+import WelcomePage from '../../components/WelcomePage/WelcomePage';
 
 class LoginContainer extends Component {
   constructor(props) {
@@ -47,12 +48,18 @@ class LoginContainer extends Component {
 
   render() {
     return (
+      <div>
+      {this.state.user ?
+        <WelcomePage user={this.state.user} onSignOut={this.SignOut} />
+         :
       <LoginPage
         onSignIn={this.signIn}
         user={this.state.user}
         onSignOut={this.signOut}
         attemptedLogin={this.state.attemptedLogin}
       />
+      }
+      </div>
     );
   }
 }

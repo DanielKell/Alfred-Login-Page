@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Drawer from "material-ui/Drawer";
 import MenuItem from "material-ui/MenuItem";
 import Menu from "material-ui/svg-icons/navigation/menu";
+import Divider from 'material-ui/Divider';
 
 import logo from "../../images/servant-outline.svg";
 import "./styles.css";
@@ -36,15 +37,19 @@ class NavBarMobile extends Component {
             <MenuItem onClick={this.handleClose}>
               <h3 className="nav-mobile-drawer-font">Home</h3>
             </MenuItem>
+            <Divider />
             <MenuItem onClick={this.handleClose}>
               <h3 className="nav-mobile-drawer-font">About Us</h3>
             </MenuItem>
+            <Divider />
             <MenuItem onClick={this.handleClose}>
               <h3 className="nav-mobile-drawer-font">Pricing</h3>
             </MenuItem>
+            <Divider />
             <MenuItem onClick={this.handleClose}>
               <h3 className="nav-mobile-drawer-font">Contact</h3>
             </MenuItem>
+            <Divider />
           </Drawer>
         </div>
         <div className="nav-mobile-logo">
