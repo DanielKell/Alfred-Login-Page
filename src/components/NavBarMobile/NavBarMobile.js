@@ -55,7 +55,7 @@ class NavBarMobile extends Component {
         <div className="nav-mobile-logo">
           <img src={logo} alt="Alfred Logo" />
         </div>
-        <div className="nav-mobile-login-logout">Logout</div>
+        <div className="nav-mobile-login-logout"></div>
       </div>
     );
   }

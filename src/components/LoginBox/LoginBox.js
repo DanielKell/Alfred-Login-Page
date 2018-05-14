@@ -27,6 +27,7 @@ class LoginBox extends Component {
               floatingLabelFocusStyle={{color: blue500}}
               errorText={this.props.attemptedLogin ? "Incorrect Username" : false}
               ref={"username"}
+              style={{"fontFamily": "Railway"}}
             />
           </div>
           <div className="login-field">
@@ -36,6 +37,7 @@ class LoginBox extends Component {
               floatingLabelFocusStyle={{color: blue500}}
               errorText={this.props.attemptedLogin ? "Incorrect Password" : false}
               ref={"password"}
+              style={{"fontFamily": "Railway"}}
             />
           </div>
           <div className="login-sign-in-button-container">

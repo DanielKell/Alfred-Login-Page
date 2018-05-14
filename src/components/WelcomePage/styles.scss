@@ -1,0 +1,21 @@
+@import "../../sass/shared.scss";
+
+.welcome-container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(121, 228, 247);
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+
+    .welcome-text {
+        font-family: $primary-font;
+        margin: 2em;
+    }
+
+    .welcome-page-main {
+        height: 40vh;
+    }
+}
+
