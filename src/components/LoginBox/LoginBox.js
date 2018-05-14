@@ -18,7 +18,7 @@ class LoginBox extends Component {
 
     return (
       <div className="login-box-container">
-        <Paper className="login-paper" zDepth={4}>
+        <Paper className="login-paper" zDepth={5}>
           <div className="login-field">
           
             <TextField
@@ -38,10 +38,18 @@ class LoginBox extends Component {
               ref={"password"}
             />
           </div>
+          <div className="login-sign-in-button-container">
           <RaisedButton
             onClick={this.handleSignIn}
-            label="Default"
+            label="Sign In"
+            className="login-sign-in-button"
+            labelColor={blue500}
           />
+          </div>
+          <div className="login-sign-in-options">
+          <a href=""> <p>Forgot password?</p></a>
+          <a href=""> <p>Sign Up</p></a>
+          </div>
         </Paper>
       </div>
     );

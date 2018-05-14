@@ -7,22 +7,46 @@
   background-color: rgb(121, 228, 247);
   width: 100%;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 20px;
 
   .login-page-title {
     display: flex;
+    margin-bottom: 1em;
     h2 {
       font-family: $brand-logo-font;
-      font-size: 50px;
+      font-size: 70px;
       letter-spacing: 3px;
       margin: 10px;
     }
   }
   .login-page-tagline {
-    font-size: 25px;
-    margin-bottom: 50px;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 0px;
     font-family: $primary-font;
     font-weight: 400;
     font-style: italic;
   }
+}
+
+.speech-bubble {
+	position: relative;
+	background: #fdfff5;
+  border-radius: .4em;
+  padding: .25em
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 21%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #fcfffe;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
 }

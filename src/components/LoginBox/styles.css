@@ -1,6 +1,6 @@
 .login-paper {
-  height: 300px;
-  width: 65vw;
+  height: 325px;
+  width: 75vw;
   min-width: 256px;
   max-width: 600px;
   display: "inline-block"; }
@@ -8,9 +8,23 @@
     display: flex;
     justify-content: center;
     margin: 0 20px 0 20px; }
-  .login-paper .login-button-container {
+  .login-paper .login-sign-in-button-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; }
-    .login-paper .login-button-container .login-button {
-      width: 150px; }
+    margin-top: 30px; }
+  .login-paper .login-sign-in-options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px; }
+    .login-paper .login-sign-in-options a {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      font-family: "Raleway";
+      color: inherit; }
+
+.LOL {
+  font-family: "Raleway"; }
