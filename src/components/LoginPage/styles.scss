@@ -2,6 +2,7 @@
 
 .login-container {
   height: 85vh;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   background-color: $primary-color;
