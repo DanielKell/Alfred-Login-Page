@@ -10,32 +10,30 @@
     display: flex;
     justify-content: center;
     margin: 0 20px 0 20px;
-
   }
 
   .login-sign-in-button-container {
     display: flex;
     justify-content: center;
     margin-top: 2em;
-
   }
   .login-sign-in-options {
     display: flex;
     justify-content: space-evenly;
     margin-top: 15px;
-      a {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        font-size: 14px;
-        text-decoration: none;
-        font-family: $primary-font;
-        color: inherit;
-        :hover {
-          text-decoration: underline;
+    a {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      font-family: $primary-font;
+      color: inherit;
+      :hover {
+        text-decoration: underline;
       }
-      }
+    }
   }
 }
 
@@ -50,7 +48,6 @@
 
       .login-sign-in-button-container {
         margin-top: 4em;
-
       }
 
       .login-sign-in-options a {

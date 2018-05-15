@@ -15,42 +15,50 @@ class LoginBox extends Component {
   };
 
   render() {
-
     return (
       <div className="login-box-container">
         <Paper className="login-paper" zDepth={5}>
           <div className="login-field">
-          
             <TextField
               floatingLabelText="Username"
-              floatingLabelStyle={{color: grey500}}
-              floatingLabelFocusStyle={{color: blue500}}
-              errorText={this.props.attemptedLogin ? "Incorrect Username" : false}
+              floatingLabelStyle={{ color: grey500 }}
+              floatingLabelFocusStyle={{ color: blue500 }}
+              errorText={
+                this.props.attemptedLogin ? "Incorrect Username" : false
+              }
               ref={"username"}
-              style={{"fontFamily": "Railway"}}
+              style={{ fontFamily: "Railway" }}
             />
           </div>
           <div className="login-field">
             <TextField
               floatingLabelText="Password"
-              floatingLabelStyle={{color: grey500}}
-              floatingLabelFocusStyle={{color: blue500}}
-              errorText={this.props.attemptedLogin ? "Incorrect Password" : false}
+              floatingLabelStyle={{ color: grey500 }}
+              floatingLabelFocusStyle={{ color: blue500 }}
+              errorText={
+                this.props.attemptedLogin ? "Incorrect Password" : false
+              }
               ref={"password"}
-              style={{"fontFamily": "Railway"}}
+              style={{ fontFamily: "Railway" }}
             />
           </div>
           <div className="login-sign-in-button-container">
-          <RaisedButton
-            onClick={this.handleSignIn}
-            label="Sign In"
-            className="login-sign-in-button"
-            labelColor={blue500}
-          />
+            <RaisedButton
+              onClick={this.handleSignIn}
+              label="Sign In"
+              className="login-sign-in-button"
+              labelColor={blue500}
+            />
           </div>
           <div className="login-sign-in-options">
-          <a href=""> <p>Forgot password?</p></a>
-          <a href=""> <p>Sign Up</p></a>
+            <a href="">
+              {" "}
+              <p>Forgot password?</p>
+            </a>
+            <a href="">
+              {" "}
+              <p>Sign Up</p>
+            </a>
           </div>
         </Paper>
       </div>

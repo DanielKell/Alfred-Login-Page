@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Drawer from "material-ui/Drawer";
 import MenuItem from "material-ui/MenuItem";
 import Menu from "material-ui/svg-icons/navigation/menu";
-import Divider from 'material-ui/Divider';
+import Divider from "material-ui/Divider";
 
 import logo from "../../images/servant-outline.svg";
 import "./styles.css";
@@ -55,7 +55,7 @@ class NavBarMobile extends Component {
         <div className="nav-mobile-logo">
           <img src={logo} alt="Alfred Logo" />
         </div>
-        <div className="nav-mobile-login-logout"></div>
+        <div className="nav-mobile-login-logout" />
       </div>
     );
   }

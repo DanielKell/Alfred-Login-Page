@@ -9,7 +9,7 @@ import FileCloudDownload from "material-ui/svg-icons/file/cloud-download";
 import RateReview from "material-ui/svg-icons/maps/rate-review";
 import Security from "material-ui/svg-icons/hardware/security";
 
-const LoginPage = ({ onSignIn, user, attemptedLogin }) => {
+const LoginPage = ({ onSignIn, attemptedLogin }) => {
   return (
     <div className="login-container">
       <div className="login-page-desktop-left">
