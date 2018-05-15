@@ -9,13 +9,11 @@ class NavBarDesktop extends Component {
       return (
         <div className="nav-bar-container">
           <div className="nav-logo-container">
+          
             <img src={logo} alt="Alfred Logo" />
           </div>
           <div className="nav-tabs-container">
             <NavBarItems />
-          </div>
-          <div className="nav-login">
-            <p>Log Out</p>
           </div>
         </div>
       );

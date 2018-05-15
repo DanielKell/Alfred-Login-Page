@@ -4,14 +4,12 @@ import './styles.css';
 
 const NavBarItems = () => {
     return (
-    <div>
       <ul className="nav-list">
-        <li>Home</li>
-        <li>Product</li>
-        <li>About Us</li>
-        <li>Pricing</li>
+        <a href=""><li>Home</li></a>
+        <a href=""><li>Product</li></a>
+        <a href=""><li>About Us</li></a>
+        <a href=""><li>Pricing</li></a>
       </ul>    
-    </div>
     )
   }
 

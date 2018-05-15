@@ -4,13 +4,12 @@
   justify-content: space-between;
   height: 75px; }
   .nav-bar-container .nav-logo-container {
-    width: 20%; }
-  .nav-bar-container .nav-tabs-container {
-    width: 60%; }
-  .nav-bar-container .nav-login {
-    width: 20%;
+    width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: center; }
+  .nav-bar-container .nav-tabs-container {
+    width: 60%;
+    max-width: 600px;
+    height: 100%;
     align-items: center;
-    font-family: "Londrina Solid";
-    font-size: 20px; }
+    display: flex; }

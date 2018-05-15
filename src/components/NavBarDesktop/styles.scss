@@ -6,17 +6,15 @@
   justify-content: space-between;
   height: 75px;
   .nav-logo-container {
-    width: 20%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
   }
   .nav-tabs-container {
     width: 60%;
-  }
-  .nav-login {
-    width: 20%;
+    max-width: 600px;
+    height: 100%;
+        align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Londrina Solid";
-    font-size: 20px;
   }
 }

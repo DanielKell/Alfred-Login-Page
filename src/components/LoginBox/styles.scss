@@ -32,6 +32,9 @@
         text-decoration: none;
         font-family: $primary-font;
         color: inherit;
+        :hover {
+          text-decoration: underline;
+      }
       }
   }
 }
