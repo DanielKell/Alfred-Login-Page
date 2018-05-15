@@ -1,6 +1,8 @@
+@import "../../sass/shared.scss";
+
 .nav-bar-container {
   display: flex;
-  background-color: rgb(8, 198, 239);
+  background-color: $secondary-color;
   justify-content: space-between;
   height: 75px;
   .nav-logo-container {

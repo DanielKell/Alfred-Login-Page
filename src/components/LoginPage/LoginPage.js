@@ -17,7 +17,9 @@ const LoginPage = ({ onSignIn, user, attemptedLogin }) => {
           Making your life a little easier
         </h3>
         <div className="login-page-title">
+        <div>
           <img src={logo} alt="Alfred logo" />
+        </div>
           <h2>Alfred</h2>
         </div>
         <div className="login-page-alfred-details">
@@ -45,6 +47,7 @@ const LoginPage = ({ onSignIn, user, attemptedLogin }) => {
         </div>
       </div>
       <div className="login-page-desktop-right">
+        <h4>Sign in to get started!</h4>
         <LoginBox onSignIn={onSignIn} attemptedLogin={attemptedLogin} />
       </div>
     </div>

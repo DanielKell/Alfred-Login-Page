@@ -13,9 +13,17 @@
     display: none;
   }
 
+  .login-page-desktop-right h4 {
+    display: none;
+  }
+
   .login-page-title {
     display: flex;
     margin-bottom: 1em;
+    div img {
+      margin: 10px;
+      height: 70px;
+    }
     h2 {
       font-family: $brand-logo-font;
       font-size: 70px;
@@ -44,7 +52,7 @@
 	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 21%;
+	left: 26%;
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
@@ -61,6 +69,15 @@
     flex-direction: row;
     padding-top: 0px;
 
+    .login-page-title {
+      h2 {
+        font-size: 85px;
+      }
+      div img{
+      height: 90px;
+      }
+    }
+
   .login-page-desktop-left {
     width: 60%;
     height: 100%;
@@ -73,6 +90,8 @@
     .login-page-alfred-details {
 
       display: flex;
+      margin-bottom: 3em;
+      margin-top: 3em;
 
     .login-page-alfred-details-window {
       height: 200px;
@@ -98,5 +117,20 @@
     justify-content: center;
     align-items: center;
     border-left: 2px dashed $secondary-color;
+    flex-direction: column;
+    h4 {
+      display: block;
+      font-family: $primary-font;
+      font-size: 22px;
+      margin: 1.5em;
+    }
+    .login-box-container {
+      padding-bottom: 4em;
+    }
+  }
+
+  .speech-bubble:after {
+    left: 18%;
+
   }
 }}

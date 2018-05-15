@@ -8,9 +8,14 @@
   padding-top: 20px; }
   .login-container .login-page-alfred-details {
     display: none; }
+  .login-container .login-page-desktop-right h4 {
+    display: none; }
   .login-container .login-page-title {
     display: flex;
     margin-bottom: 1em; }
+    .login-container .login-page-title div img {
+      margin: 10px;
+      height: 70px; }
     .login-container .login-page-title h2 {
       font-family: "Londrina Shadow";
       font-size: 70px;
@@ -34,7 +39,7 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 21%;
+  left: 26%;
   width: 0;
   height: 0;
   border: 20px solid transparent;
@@ -49,6 +54,10 @@
     display: flex;
     flex-direction: row;
     padding-top: 0px; }
+    .login-container .login-page-title h2 {
+      font-size: 85px; }
+    .login-container .login-page-title div img {
+      height: 90px; }
     .login-container .login-page-desktop-left {
       width: 60%;
       height: 100%;
@@ -57,7 +66,9 @@
       align-items: center;
       flex-direction: column; }
       .login-container .login-page-desktop-left .login-page-alfred-details {
-        display: flex; }
+        display: flex;
+        margin-bottom: 3em;
+        margin-top: 3em; }
         .login-container .login-page-desktop-left .login-page-alfred-details .login-page-alfred-details-window {
           height: 200px;
           width: 17vw;
@@ -76,4 +87,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-left: 2px dashed #08c6ef; } }
+      border-left: 2px dashed #59dbfc;
+      flex-direction: column; }
+      .login-container .login-page-desktop-right h4 {
+        display: block;
+        font-family: "Raleway";
+        font-size: 22px;
+        margin: 1.5em; }
+      .login-container .login-page-desktop-right .login-box-container {
+        padding-bottom: 4em; }
+    .login-container .speech-bubble:after {
+      left: 18%; } }
