@@ -3,7 +3,7 @@
   flex-direction: column; }
   .appContentWrapper .appHeaderDesktop {
     display: none; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 650px) {
     .appContentWrapper .appHeaderMobile {
       display: none; }
     .appContentWrapper .appHeaderDesktop {

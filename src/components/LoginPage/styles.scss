@@ -4,10 +4,14 @@
   height: 85vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(121, 228, 247);
+  background-color: $primary-color;
   width: 100%;
   align-items: center;
   padding-top: 20px;
+
+  .login-page-alfred-details {
+    display: none;
+  }
 
   .login-page-title {
     display: flex;
@@ -50,3 +54,49 @@
 	margin-left: -10px;
 	margin-bottom: -20px;
 }
+
+@media screen and (min-width: $breakpoint-mobile) {
+  .login-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+
+  .login-page-desktop-left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .login-page-alfred-details {
+
+      display: flex;
+
+    .login-page-alfred-details-window {
+      height: 200px;
+      width: 17vw;
+      margin: .5em;
+      max-width: 200px;
+      text-align: center;
+
+      h4{
+      font-family: $primary-font;
+      font-size: 18px;
+      }
+      p {
+        font-family: $primary-font;
+        font-size: 16px;
+      }
+    }}
+  }
+  .login-page-desktop-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px dashed $secondary-color;
+  }
+}}

@@ -50,12 +50,11 @@ class LoginContainer extends Component {
     return (
       <div>
       {this.state.user ?
-        <WelcomePage user={this.state.user} onSignOut={this.SignOut} />
+        <WelcomePage user={this.state.user} onSignOut={this.signOut} />
          :
       <LoginPage
         onSignIn={this.signIn}
         user={this.state.user}
-        onSignOut={this.signOut}
         attemptedLogin={this.state.attemptedLogin}
       />
       }

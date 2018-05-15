@@ -3,8 +3,8 @@
 .login-paper {
   height: 325px;
   width: 75vw;
-  min-width: 256px;
-  max-width: 600px;
+  min-width: 235px;
+  max-width: 400px;
   display: "inline-block";
   .login-field {
     display: flex;
@@ -16,7 +16,7 @@
   .login-sign-in-button-container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 2em;
 
   }
   .login-sign-in-options {
@@ -36,6 +36,24 @@
   }
 }
 
-.LOL {
-  font-family: $primary-font;
+@media screen and (min-width: $breakpoint-mobile) {
+  .login-box-container {
+    display: flex;
+    justify-content: center;
+
+    .login-paper {
+      width: 32vw;
+      height: 400px;
+
+      .login-sign-in-button-container {
+        margin-top: 4em;
+
+      }
+
+      .login-sign-in-options a {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
 }
