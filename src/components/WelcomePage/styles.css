@@ -6,9 +6,18 @@
   background-color: #afeffa;
   width: 100%;
   align-items: center;
-  padding-top: 20px; }
+  padding-bottom: 2em;
+  padding-top: 2em; }
   .welcome-container .welcome-text {
     font-family: "Raleway";
-    margin: 2em; }
+    margin: 2em;
+    font-weight: 500; }
   .welcome-container .welcome-page-main {
-    height: 40vh; }
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    max-width: 450px; }
+    .welcome-container .welcome-page-main img {
+      width: 100%; }

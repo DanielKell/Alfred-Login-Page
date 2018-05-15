@@ -7,14 +7,25 @@
   background-color: $primary-color;
   width: 100%;
   align-items: center;
-  padding-top: 20px;
+  padding-bottom: 2em;
+  padding-top: 2em;
 
   .welcome-text {
     font-family: $primary-font;
     margin: 2em;
+    font-weight: 500;
   }
 
   .welcome-page-main {
-    height: 40vh;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    max-width: 450px;
+
+    img {
+        width: 100%;
+    }
   }
 }
